@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background-color: #333; /* Change to desired background color */
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust size as needed */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .dropdown {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    /* width: 170px;
+    height: 200px; */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown li {
+    margin: 5px 0;
+  }
+  
+  .dropdown li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+
+  .nav-links-vertical {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-inline-start: 0; 
+  }
+  .nav-links-vertical li {
+    list-style-type: none; /* Remove bullet points */
+  }
+  
+  /* Add these styles to make the navigation items horizontal */
+  .nav-links-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0;
+  }
+  .nav-links-horizontal li {
+    margin: 0 50px;
+    list-style-type: none;
+  
+    
+    color:black;
+     /* Add some margin between the horizontal navigation items */
+  }
+  
+  .navbar.open {
+    background-color: #333; /* Change the background color as needed */
+  }
+
+  .nav-item {
+    margin: 0 10px; 
+    
+    /* Adjust as needed */
+  }
